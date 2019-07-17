@@ -1,0 +1,15 @@
+<button button = "button" (click)="this.test(0)">posts</button>
+<ul *ngFor = "let post of postList$">
+  <p>{{post.body}}</p>
+  <mat-card>
+    <mat-card-title>{{post.title}}</mat-card-title>
+    <mat-card-header>{{post.category}}</mat-card-header>
+    <mat-card-content>{{post.id}}</mat-card-content>
+  </mat-card>
+</ul>
+
+
+
+  <mat-divider></mat-divider>
+
+
