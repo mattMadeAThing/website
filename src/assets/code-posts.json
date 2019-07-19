@@ -2,5 +2,10 @@
   "title": "codePostOne",
   "id": "0",
   "body": "this is the first post"
-  }]
+  },
+  {
+  "title": "codePostTwo",
+  "id": "1",
+  "body": "this is the first post"
+    }]
 

@@ -33,9 +33,8 @@ export class PostDetailComponent implements OnInit {
           this.category = params['category'];
         }
       );
-      console.log(this.id, this.category)
-      this.svc.getPost(this.category, this.id).subscribe((data: Post[]) => this.post = data[this.id]);
-      console.log(this.post);
+
+      this.post$ = this.svc.getPost(this.category, this.id);
 
       }
 

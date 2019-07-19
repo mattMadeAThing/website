@@ -17,11 +17,18 @@ export class PostService {
     return this.httpGet.get<Post[]>('/assets/posts.json');
   }
 
-  getPost(category: string, id: number){
+  getPost (category: string, id: number):Observable<Post> {
     console.log("service triggered")
-    this.postList$ = this.httpGet.get<Post[]>('assets/' + category + '-posts.json');
-    console.log(this.postList$);
-    return this.postList$;
+    this.post$ = this.httpGet.get<Post[]>('assets/' + category + '-posts.json').pipe(
+      map((res: Post[]) => {
+        if(res === undefined) {console.log('novals'); }
+
+        return res[id];
+
+      })
+    );
+
+    return this.post$;
   }
 
 }
