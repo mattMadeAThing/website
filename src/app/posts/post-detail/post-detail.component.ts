@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap} from '@angular/router';
+import { Router, ActivatedRoute, ParamMap, Params} from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 import {Post} from '../Post';
 import { PostService } from '../post.service';
@@ -13,29 +14,32 @@ export class PostDetailComponent implements OnInit {
   post$: Observable<Post>;
   post: Post;
   id: number;
-  postList$: Post[];
+  category:string;
+  dat;
+  postList$:Observable< Post[]>;
 
   constructor(
     private svc: PostService,
     private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    private httpGet: HttpClient) { }
 
 
     ngOnInit() {
-    console.log("help");
-    this.id = 0;
-    this.post$ = this.route.paramMap.pipe(
-      switchMap((params: ParamMap)=>
+      this.route.params
+      .subscribe(
+        (params: Params) =>{
+          this.id = +params['id'];
+          this.category = params['category'];
+        }
+      );
+      console.log(this.id, this.category)
+      this.svc.getPost(this.category, this.id).subscribe((data: Post[]) => this.post = data[this.id]);
+      console.log(this.post);
 
-       this.svc.getPost(+params.get('id'))
+      }
 
-      )
-    )
-    this.post$.subscribe(data => this.post = data);
-  }
+  offInit() {
 
-  offInit(){
-    this.svc.getPostList().subscribe(data => this.postList$ = data);
-    console.log(this.postList$[1]);
   }
 }

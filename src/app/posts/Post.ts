@@ -1,6 +1,5 @@
-export interface Post{
-  title: string;
-  id: number;
-  category: number;
-  body: string;
+export interface Post {
+    title: string;
+    id: number;
+    body: string;
 }
