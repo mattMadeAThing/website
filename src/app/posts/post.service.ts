@@ -11,24 +11,23 @@ export class PostService {
   postList$: Observable<Post[]>;
   post$: Observable<Post>;
   post: Post;
-  constructor(private httpGet: HttpClient) {}
+  constructor(private httpGet: HttpClient) { }
 
-  getPostList(){
-    return this.httpGet.get<Post[]>('/assets/posts.json');
+  getPostList(category: string) {
+    return this.httpGet.get<Post[]>('assets/' + category + '-posts.json');
   }
 
-  getPost (category: string, id: number):Observable<Post> {
-    console.log("service triggered")
-    this.post$ = this.httpGet.get<Post[]>('assets/' + category + '-posts.json').pipe(
-      map((res: Post[]) => {
-        if(res === undefined) {console.log('novals'); }
-
-        return res[id];
-
-      })
-    );
-
+  getPost(category: string, id: number): Observable<Post> {
+    this.post$ = this.httpGet
+      .get<Post[]>('assets/' + category + '-posts.json')
+      .pipe(
+        map((res: Post[]) => {
+          if (res === undefined) {
+            console.log('novals');
+          }
+          return res[id];
+        })
+      );
     return this.post$;
   }
-
 }

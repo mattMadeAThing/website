@@ -81,7 +81,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/image"
             ],
             "styles": [
               "src/styles.css"

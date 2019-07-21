@@ -16,10 +16,9 @@ export class PostListComponent implements OnInit {
     private service: PostService) { }
 
   ngOnInit() {
+    this.service.getPostList('code').subscribe(data => this.postList$ = data);
   }
-  test(id: number){
-    this.service.getPostList().subscribe(data => this.postList$ = data);
-    console.log(this.postList$[0]);
+  getLink(){
   }
 
 }

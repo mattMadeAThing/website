@@ -1,15 +1,18 @@
-<button button = "button" (click)="this.test(0)">posts</button>
-<ul *ngFor = "let post of postList$">
-  <p>{{post.body}}</p>
-  <mat-card>
-    <mat-card-title>{{post.title}}</mat-card-title>
-    <mat-card-header>{{post.category}}</mat-card-header>
-    <mat-card-content>{{post.id}}</mat-card-content>
+<div [ngStyle] =  "{background: ('url(http://www.textures4photoshop.com/tex/thumbs/triangles-low-poly-free-background-texture-56.jpg')}">
+<div *ngFor = "let post of postList$">
+<div class ="text-gray">
+<mat-list>
+
+  <mat-card class = "card-background-content">
+    <mat-card-title>
+      <h1 class = "post-list-title">{{post.title}}</h1>
+    </mat-card-title>
+    <div class = "text-gray">
+      <mat-card-header class = "content"><h3>{{post.header}}</h3></mat-card-header>
+      <mat-card-content>{{post.id}}</mat-card-content>
+  </div>
   </mat-card>
-</ul>
-
-
-
-  <mat-divider></mat-divider>
-
-
+</mat-list>
+</div>
+</div>
+</div>

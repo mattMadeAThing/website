@@ -1,11 +1,20 @@
-[{
-  "title": "codePostOne",
-  "id": "0",
-  "body": "this is the first post"
+[
+  {
+    "id": "0",
+    "title": "Building this website",
+    "header": "A$ync programming and the pursuit of dry code",
+    "body": "this is the first post"
   },
   {
-  "title": "codePostTwo",
-  "id": "1",
-  "body": "this is the first post"
-    }]
-
+    "id": "1",
+    "title": "codePostTwo",
+    "header": "codePostTwo Header",
+    "body": "this is the second post"
+  },
+  {
+    "id": "2",
+    "title": "codePostThree",
+    "header": "codePostTwo Header",
+    "body": "this is the second post"
+  }
+]
