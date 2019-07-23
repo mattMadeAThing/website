@@ -1,41 +1,11 @@
 <img  class = "header-img" src = "../assets/image/green-mountains.jpg">
 <mat-toolbar class = "toolbar-stylings">
   <div class = "toolbar-flex-container">
-    <a class ="t" [routerLink]="['/about/postlist']" routerLinkActive="router-link-active" >Code </a>
-
-
-    <a [routerLink]="['/code/postlist']" routerLinkActive="router-link-active" >Music </a>
-
-    <a [routerLink]="['/music/postlist']" routerLinkActive="router-link-active" >Home </a>
-    <a [routerLink]="['/writing/postlist']" routerLinkActive="router-link-active" >About</a>
+    <a class ="t" [routerLink]="['/about/postlist']" routerLinkActive="router-link-active" >about </a>
+    <a [routerLink]="['/code/postlist']" routerLinkActive="router-link-active" >code </a>
+    <a [routerLink]="['/music/postlist']" routerLinkActive="router-link-active" >music </a>
+    <a [routerLink]="['/writing/postlist']" routerLinkActive="router-link-active" >writing</a>
     <span class = "fill-link-space">
       <h3>Toggle menu</h3>
     </span>
   </div>
-</mat-toolbar>
-<mat-toolbar color="primary">
-    <span class="fill-remaining-space">
-      <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu" [overlapTrigger]="false">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
-          <span>Home</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>people_outline</mat-icon>
-          <span>Connecting</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>videocam</mat-icon>
-          <span>Let's talk</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>exit_to_app</mat-icon>
-          <span>Logout</span>
-        </button>
-      </mat-menu>
-    </span>
-    <span class="fill-remaining-space">Application Title</span>
-  </mat-toolbar>

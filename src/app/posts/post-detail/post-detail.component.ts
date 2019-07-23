@@ -14,9 +14,9 @@ export class PostDetailComponent implements OnInit {
   post$: Observable<Post>;
   post: Post;
   id: number;
-  category:string;
+  category: string;
   dat;
-  postList$:Observable< Post[]>;
+  postList$: Observable< Post[]>;
 
   constructor(
     private svc: PostService,

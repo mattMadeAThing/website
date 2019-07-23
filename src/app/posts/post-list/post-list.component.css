@@ -2,7 +2,7 @@ img{max-width: 75%;
   max-height: 75%;
 scale:50%;}
 mat-card{
-  background-color: antiquewhite;
+  background-color: rgb(120, 129, 255);
   text-align: center;
   margin-left: 10%;
   margin-right:10%;
@@ -34,6 +34,12 @@ background-color: aqua;}
 background-color: blue}
 
 .post-photo {
+  grid-area: post-photo;
   background-color: green;
-  grid-area: post-photo; }
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+   }
 /*end grid*/

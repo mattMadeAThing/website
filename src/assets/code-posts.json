@@ -3,7 +3,8 @@
     "id": "0",
     "title": "Building this website",
     "header": "A$ync programming and the pursuit of dry code",
-    "body": "this is the first post"
+    "body": "this is the first post",
+    "previewImagePath": "assets/image/focused.jpg"
   },
   {
     "id": "1",

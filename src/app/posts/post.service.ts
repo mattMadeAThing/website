@@ -14,7 +14,8 @@ export class PostService {
   constructor(private httpGet: HttpClient) { }
 
   getPostList(category: string) {
-    return this.httpGet.get<Post[]>('assets/' + category + '-posts.json');
+    this.postList$ = this.httpGet.get<Post[]>('assets/' + category + '-posts.json');
+    return this.postList$;
   }
 
   getPost(category: string, id: number): Observable<Post> {
