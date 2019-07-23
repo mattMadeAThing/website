@@ -2,7 +2,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import {HeaderComponent} from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostDetailComponent } from './posts/post-detail/post-detail.component';
@@ -15,13 +17,15 @@ import { PostService } from './posts/post.service';
     AppComponent,
     PostDetailComponent,
     PostListComponent,
-    PostItemComponent
+    PostItemComponent,
+    HeaderComponent
   ],
   imports: [
     MaterialModule,
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   exports:[MaterialModule],
   providers: [PostService],

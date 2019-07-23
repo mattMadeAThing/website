@@ -14,8 +14,26 @@ mat-card{
 }
 .card-background-content{
   text-align: center;
-  background: goldenrod;
+  background: rgb(120, 129, 255);
 }
-.text-gray{
-  background-color:antiquewhite;
+.background-postlist{
+  background-color: #103b2b;
 }
+/*begin grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr;
+  grid-template-areas: "post-photo post-title post-title" "post-photo post-preview post-preview";
+}
+
+.post-preview { grid-area: post-preview;
+background-color: aqua;}
+
+.post-title { grid-area: post-title;
+background-color: blue}
+
+.post-photo {
+  background-color: green;
+  grid-area: post-photo; }
+/*end grid*/

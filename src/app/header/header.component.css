@@ -1,0 +1,9 @@
+.header-img{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 100%;
+}
+.fill-link-space{
+  flex: 1 1 auto;
+}
