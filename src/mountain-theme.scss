@@ -1,0 +1,75 @@
+@import '~@angular/material/theming';
+@include mat-core();
+/* For use in src/lib/core/theming/_palette.scss */
+$md-mtnprimary: (
+    50 : #e3efeb,
+    100 : #b9d8cc,
+    200 : #8abeab,
+    300 : #5ba389,
+    400 : #38906f,
+    500 : #157c56,
+    600 : #12744f,
+    700 : #0f6945,
+    800 : #0c5f3c,
+    900 : #064c2b,
+    A100 : #80ffbc,
+    A200 : #4dffa1,
+    A400 : #1aff87,
+    A700 : #01ff79,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-mtnaccent: (
+    50 : #edf9f9,
+    100 : #d1eff1,
+    200 : #b2e5e7,
+    300 : #93dbdd,
+    400 : #7cd3d6,
+    500 : #65cbcf,
+    600 : #5dc6ca,
+    700 : #53bec3,
+    800 : #49b8bd,
+    900 : #37acb2,
+    A100 : #fdffff,
+    A200 : #cafcff,
+    A400 : #97f9ff,
+    A700 : #7ef8ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$my-app-primary: mat-palette($md-mtnprimary);
+$my-app-accent:  mat-palette($md-mtnaccent);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
