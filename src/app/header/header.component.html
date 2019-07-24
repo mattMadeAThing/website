@@ -1,31 +1,16 @@
+<img *ngIf = "this.banner === true" class = "header-img" src = "../assets/image/green-mountains.png">
+<nav class= "toolbar-styling" mat-tab-nav-bar>
+    <a mat-tab-link
+       *ngFor="let link of tabLinks"
+       [routerLink]= "link.path"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="rla.isActive">
+       {{link.name}}
+    </a>
+    <span class = "fill-link-space"></span>
+    <a mat-tab-link (click)= "toggleBanner()">
+        <mat-icon class = "bannerShown" *ngIf="this.banner">arrow_drop_up</mat-icon>
+        <mat-icon class = "bannerHidden" *ngIf="!this.banner">arrow_drop_down</mat-icon>
+    </a>
+  </nav>
 
-<mat-toolbar class = "toolbar-stylings">
-  <div class = "toolbar-flex-container">
-    <a class ="t" [routerLink]="['/about/postlist']" routerLinkActive="router-link-active" >about </a>
-    <a [routerLink]="['/code/postlist']" routerLinkActive="router-link-active" >code </a>
-    <a [routerLink]="['/music/postlist']" routerLinkActive="router-link-active" >music </a>
-    <a [routerLink]="['/writing/postlist']" routerLinkActive="router-link-active" >writing</a>
-    <span class = "fill-link-space">
-      <h3>Toggle menu</h3>
-    </span>
-  </div>
-</mat-toolbar>
-<img  class = "header-img" src = "../assets/image/green-mountains.png">
-
-
-<mat-tab-group>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      The <em>best</em> pasta
-    </ng-template>
-    <h1>Best pasta restaurants</h1>
-    <p>...</p>
-  </mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-      <mat-icon>thumb_down</mat-icon> The worst sushi
-    </ng-template>
-    <h1>Terrible sushi restaurants</h1>
-    <p>...</p>
-  </mat-tab>
-</mat-tab-group>
