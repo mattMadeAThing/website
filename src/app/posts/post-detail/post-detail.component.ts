@@ -6,6 +6,7 @@ import {Post} from '../Post';
 import { PostService } from '../post.service';
 import { Observable } from 'rxjs';
 @Component({
+
   selector: 'app-post-detail',
   templateUrl: './post-detail.component.html',
   styleUrls: ['./post-detail.component.css']
@@ -28,9 +29,9 @@ export class PostDetailComponent implements OnInit {
     ngOnInit() {
       this.route.params
       .subscribe(
-        (params: Params) =>{
-          this.id = +params['id'];
-          this.category = params['category'];
+        (params: Params) => {
+          this.id = +params.id;
+          this.category = params.category;
         }
       );
 
