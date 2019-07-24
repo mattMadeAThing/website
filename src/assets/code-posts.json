@@ -5,8 +5,9 @@
     "header": "A$ync programming and the pursuit of dry code",
     "body": "this is the first post",
     "previewImagePath": "assets/image/focused.jpg",
-    "previewText": "After many iterations and beautiful(and informative) failures, I finally found myself thinking the magic thought\"It's almost done? IT'S ALMOST DONE!!!!\" While making standalone components is certainly gratifying work, the feeling of getting ready to publish my personal site is amazing.  "
-
+    "previewText": "After many iterations and beautiful(and informative) failures, I finally found myself thinking the magic thought\"It's almost done? IT'S ALMOST DONE!!!!\" While making standalone components is certainly gratifying work, the feeling of getting ready to publish my personal site is amazing.  ",
+    "postImage": "assets/image/toomanymonitors.jpg",
+    "postImageSubtext":"The minimum number of monitors are needed to produce make a hello world, according to the material design spec"
   },
   {
     "id": "1",

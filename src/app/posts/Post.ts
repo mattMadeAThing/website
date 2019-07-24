@@ -5,4 +5,6 @@ export interface Post {
     body: string;
     previewImagePath?: string;
     previewText?: string;
+    postImage?: string;
+    postImageSubtext?: string;
 }

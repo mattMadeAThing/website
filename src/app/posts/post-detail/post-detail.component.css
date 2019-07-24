@@ -1,3 +1,4 @@
+/*grid, permalink = https://grid.layoutit.com/?id=QHuV95l*/
 .grid-container {
   width: 100%;
   height: 700px;
@@ -13,6 +14,7 @@ background-color: aqua; }
 .article-photo {
   grid-area: article-photo;
   background-color: red;
+
  }
 
 .article-quote {
@@ -41,3 +43,14 @@ background-color: aqua; }
   background-color: hotpink;
 }
 
+/*end gridd*/
+
+img{max-height: 100%;
+
+  block-size: auto;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
