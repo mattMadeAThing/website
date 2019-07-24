@@ -1,8 +1,10 @@
+
 img{max-width: 75%;
   max-height: 75%;
 scale:50%;}
+
 mat-card{
-  background-color: white;
+  background-color: primary;
   text-align: center;
   margin-left: 10%;
   margin-right:10%;
@@ -17,8 +19,7 @@ mat-card{
   background: rgb(120, 129, 255);
 }
 .background-postlist{
-
-  background-color:#157C56;
+  background-color: primary;
   /*
   mompallet blue #3fcbe0
   purple #4c2bba
