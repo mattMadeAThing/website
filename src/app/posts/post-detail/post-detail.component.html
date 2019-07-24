@@ -1,3 +1,4 @@
 <p>post-detail works!</p>
 
-<h1 *ngIf = "this.post$ | async">{{(this.post$ | async)?.title}}ass</h1>
+<h1 *ngIf = "this.post$ | async">{{(this.post$ | async)?.title}}</h1>
+<p>{{(this.post$| async)?.body}}</p>
