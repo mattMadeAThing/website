@@ -1,0 +1,20 @@
+.art-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: .5fr 0.5fr 1fr 0.25fr 1fr 1fr;
+  grid-template-areas: "title title title title title title title title title title title title" "left-margin left-margin article-photo article-photo article-photo article-photo article-photo article-photo article-photo article-photo right-margin right-margin" "left-margin left-margin article-photo article-photo article-photo article-photo article-photo article-photo article-photo article-photo right-margin right-margin" "left-margin left-margin article-quote article-quote article-quote article-quote article-quote article-quote article-quote article-quote right-margin right-margin" "left-margin left-margin content-block-left content-block-left content-block-left content-block-left content-block-right content-block-right content-block-right content-block-right right-margin right-margin" "left-margin left-margin content-block-left content-block-left content-block-left content-block-left content-block-right content-block-right content-block-right content-block-right right-margin right-margin";
+}
+
+.art-title { grid-area: article-title; }
+
+.art-article-photo { grid-area: article-article-photo; }
+
+.art-article-quote { grid-area: article-article-quote; }
+
+.art-content-block-left { grid-area: article-content-block-left; }
+
+.art-content-block-right { grid-area: article-content-block-right; }
+
+.art-left-margin { grid-area: article-left-margin; }
+
+.art-right-margin { grid-area: article-right-margin;}
