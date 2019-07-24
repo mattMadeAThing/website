@@ -39,6 +39,10 @@ mat-card{
 }
 
 .post-title { grid-area: post-title;
+  margin-bottom: 5px;
+}
+.h1sz{
+  margin:4px;
 }
 
 .post-photo {

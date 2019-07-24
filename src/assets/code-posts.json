@@ -4,18 +4,22 @@
     "title": "Building this website",
     "header": "A$ync programming and the pursuit of dry code",
     "body": "this is the first post",
-    "previewImagePath": "assets/image/focused.jpg"
+    "previewImagePath": "assets/image/focused.jpg",
+    "previewText": "After many iterations and beautiful(and informative) failures, I finally found myself thinking the magic thought\"It's almost done? IT'S ALMOST DONE!!!!\" While making standalone components is certainly gratifying work, the feeling of getting ready to publish my personal site is amazing.  "
+
   },
   {
     "id": "1",
-    "title": "codePostTwo",
-    "header": "codePostTwo Header",
-    "body": "this is the second post"
+    "title": "Angular as a first framework",
+    "header": "Overcoming the learning cliff",
+    "body": "this is the second post",
+    "previewText": "this is a preview"
   },
   {
     "id": "2",
     "title": "codePostThree",
     "header": "codePostTwo Header",
-    "body": "this is the second post"
+    "body": "this is the second post",
+    "previewText": "this is a preview"
   }
 ]

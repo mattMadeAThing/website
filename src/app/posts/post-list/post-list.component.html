@@ -2,13 +2,16 @@
 
   <div class="background-postlist">
     <mat-list>
-
       <mat-card class="grid-container">
-        <h1 class="post-title">{{post.title}}</h1>
-        <mat-card-header class="post-preview">
-          <h3>{{post.header}}</h3>
+        <div class="post-title">
+          <h1 class = h1sz>{{post.title}}</h1>
+          <em >{{post.header}}</em>
+        </div>
+        <div class="post-preview">
+          <mat-card-header>{{post.previewText}}
         </mat-card-header>
-        <a [routerLink]="['/',this.category,post.id]" routerLinkActive="router-link-active">aaa</a><img
+      </div>
+        <a [routerLink]="['/', this.category, post.id]" routerLinkActive="router-link-active">go</a><img
           *ngIf="post.previewImagePath != undefined" class="post-photo" [src]="post.previewImagePath">
       </mat-card>
     </mat-list>

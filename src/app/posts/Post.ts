@@ -4,4 +4,5 @@ export interface Post {
     header: string;
     body: string;
     previewImagePath?: string;
+    previewText?: string;
 }
