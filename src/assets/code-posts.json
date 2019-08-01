@@ -7,7 +7,45 @@
     "previewImagePath": "assets/image/focused.jpg",
     "previewText": "After many iterations and beautiful(and informative) failures, I finally found myself thinking the magic thought\"It's almost done? IT'S ALMOST DONE!!!!\" While making standalone components is certainly gratifying work, the feeling of getting ready to publish my personal site is amazing.  ",
     "postImage": "assets/image/toomanymonitors.jpg",
-    "postImageSubtext":"The minimum number of monitors are needed to produce make a hello world, according to the material design spec"
+    "postImageSubtext":"The minimum number of monitors are needed to produce make a hello world, according to the material design spec",
+    "contentParagraph":[
+      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
+      "header",
+      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
+      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
+      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
+      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements."
+    ],
+    "contentImages":[
+      "noimg",
+      "assets/image/focused.jpg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg",
+      "noimg"
+    ],
+    "contentHeaders":[
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "The struggle of asynchronous code",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "nohdr"
+    ]
   },
   {
     "id": "1",

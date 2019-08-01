@@ -1,11 +1,27 @@
-<div class="grid-container">wha
-    <div class="title"><h1>{{(this.post$ | async)?.title}}</h1></div>
-    <div class="article-photo">
-      <img class = "center" [src] = "(this.post$ | async).postImage">
+
+<div class="article-header">
+    <h1>
+      {{(this.post$ | async)?.title}}
+    </h1>
+      <img [src] = "(this.post$ | async).postImage">
+    <em>
+      {{(this.post$ | async)?.postImageSubtext}}
+    </em>
+</div>
+<div class = "background">
+<div class="body-content">
+
+    <div class = "paragraphs" *ngFor="let paragraph of (this.post$ | async).contentParagraph; index as i;">
+     <p>{{paragraph}}</p>
+
+     <div *ngIf = "(this.post$ | async).contentImages[i] != 'noimg'">
+       <img [src] = "(this.post$ | async).contentImages[i]">
     </div>
-    <div class="article-quote"><em>{{(this.post$ | async)?.postImageSubtext}}</em></div>
-    <div class="content-block-left">content-left</div>
-    <div class="content-block-right">content-right</div>
-    <div class="left-margin">busted</div>
-    <div class="right-margin">all</div>
-  </div>
+    <div  *ngIf = "(this.post$ | async).contentHeaders[i] != 'nohdr'">
+
+      <h1>{{(this.post$ | async).contentHeaders[i]}}</h1>
+    </div>
+
+</div>
+</div>
+

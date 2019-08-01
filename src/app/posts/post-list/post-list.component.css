@@ -14,10 +14,6 @@ mat-card{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: azure;
 }
-.card-background-content{
-  text-align: center;
-  background: rgb(120, 129, 255);
-}
 .background-postlist{
   background-color: #157c56;
   /*
@@ -51,7 +47,9 @@ mat-card{
   background-color: green;
   max-width: 100%;
   max-height: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   margin-right: auto;
   margin-left: auto;
    }

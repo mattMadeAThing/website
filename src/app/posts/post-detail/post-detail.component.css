@@ -1,56 +1,32 @@
 /*grid, permalink = https://grid.layoutit.com/?id=QHuV95l*/
-.grid-container {
-  width: 100%;
-  height: 700px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: .5fr 0.5fr 1fr 0.25fr 1fr 1fr;
-  grid-template-areas: "title title title title title title title title title title title title" "left-margin left-margin article-photo article-photo article-photo article-photo article-photo article-photo article-photo article-photo right-margin right-margin" "left-margin left-margin article-photo article-photo article-photo article-photo article-photo article-photo article-photo article-photo right-margin right-margin" "left-margin left-margin article-quote article-quote article-quote article-quote article-quote article-quote article-quote article-quote right-margin right-margin" "left-margin left-margin content-block-left content-block-left content-block-left content-block-left content-block-right content-block-right content-block-right content-block-right right-margin right-margin" "left-margin left-margin content-block-left content-block-left content-block-left content-block-left content-block-right content-block-right content-block-right content-block-right right-margin right-margin";
+
+.background{
+  background-color: #157c56;
 }
-
-.title { grid-area: title;
-background-color: aqua; }
-
-.article-photo {
-  grid-area: article-photo;
-  background-color: red;
-
- }
-
-.article-quote {
-  grid-area: article-quote;
-  background-color: rosybrown;
- }
-
-.content-block-left {
-  grid-area: content-block-left;
-  background-color: royalblue;
+div.body-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin: auto;
+  background-color: #8abeab;
 }
-
-.content-block-right {
-  grid-area: content-block-right;
-  background-color: violet;
+p{
+  font-size: 24px;
+  background-color: mat-color;
 }
+div.article-header{background-color: #157c56}
+div.article-header>p,h1,img,em{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  background-color: antiquewhite;
 
-.left-margin {
-  grid-area: left-margin;
-  background-color: gray;
 }
-
-
-.right-margin {
-  grid-area: right-margin;
-  background-color: hotpink;
-}
-
-/*end gridd*/
-
-img{max-height: 100%;
-
-  block-size: auto;
-}
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media (max-width: 680) {
+  div.background{
+    margin-left: 10%
+  }
 }

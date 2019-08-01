@@ -7,4 +7,7 @@ export interface Post {
     previewText?: string;
     postImage?: string;
     postImageSubtext?: string;
+    contentImages?: [string];
+    contentParagraph?: [string];
+    contentHeaders?: [string];
 }
