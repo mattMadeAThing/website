@@ -42,6 +42,9 @@ mat-card{
   margin:4px;
 }
 
+.title-box{
+  max-width: 680px;
+}
 .post-photo {
   grid-area: post-photo;
   background-color: green;

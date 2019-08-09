@@ -9,19 +9,17 @@
     </em>
 </div>
 <div class = "background">
-<div class="body-content">
+  <div class="body-content">
 
-    <div class = "paragraphs" *ngFor="let paragraph of (this.post$ | async).contentParagraph; index as i;">
-     <p>{{paragraph}}</p>
-
-     <div *ngIf = "(this.post$ | async).contentImages[i] != 'noimg'">
-       <img [src] = "(this.post$ | async).contentImages[i]">
-    </div>
-    <div  *ngIf = "(this.post$ | async).contentHeaders[i] != 'nohdr'">
-
-      <h1>{{(this.post$ | async).contentHeaders[i]}}</h1>
-    </div>
-
+      <div class = "paragraphs" *ngFor="let paragraph of (this.post$ | async).contentParagraph; index as i;">
+        <p>
+          {{paragraph}}
+        </p>
+      <div *ngIf = "(this.post$ | async).contentImages[i] != 'noimg'">
+        <img [src] = "(this.post$ | async).contentImages[i]">
+      </div>
+      <div  *ngIf = "(this.post$ | async).contentHeaders[i] != 'nohdr'">
+        <h2>{{(this.post$ | async)?.contentHeaders[i]}}</h2>
+      </div>
+  </div>
 </div>
-</div>
-

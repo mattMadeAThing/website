@@ -15,16 +15,18 @@ p{
   background-color: mat-color;
 }
 div.article-header{background-color: #157c56}
-div.article-header>p,h1,img,em{
+div.article-header>p,h2,img,em,h1{
   display: flex;
   flex-direction: column;
   margin: auto;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 100%;
-  background-color: antiquewhite;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #b2e5e7;
+  max-width: 680px;
 
 }
+
+
 @media (max-width: 680) {
   div.background{
     margin-left: 10%

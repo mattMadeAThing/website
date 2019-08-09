@@ -21,7 +21,8 @@ export class PostService {
   getPost(category: string, id: number): Observable<Post> {
     this.post$ = this.httpGet
       .get<Post[]>('assets/' + category + '-posts.json')
-      .pipe(
+      .pipe
+      (
         map((res: Post[]) => {
           if (res === undefined) {
             console.log('novals');
