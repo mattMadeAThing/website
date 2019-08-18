@@ -4,6 +4,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "Photo Content Links" "Photo Content Links" "Photo Content Links";
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 
 .Photo { grid-area: Photo; }
@@ -18,6 +20,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "Content" "Photo" "Links";
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
   }
 
   .Content { grid-area: Content; }
