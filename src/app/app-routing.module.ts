@@ -5,11 +5,13 @@ import { PostDetailComponent } from './posts/post-detail/post-detail.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/about', pathMatch: 'full'},
   {path: 'about', component: AboutComponent},
   {path: ':category/postlist', component: PostListComponent},
   {path: ':category/:id', component: PostDetailComponent}
   // :category and :id are sent as parameters to post.service.ts.
-  // They are used to define the JSON file for PostList and PostDetail and the specific post for PostDetail.
+  // :category is used to specify which JSON file to be ussed by PostList and PostDetail.
+  // :id is used to specify the specific post for PostDetail.
   ];
 
 @NgModule({

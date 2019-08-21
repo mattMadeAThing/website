@@ -6,6 +6,7 @@
   grid-template-areas: "Photo Content Links" "Photo Content Links" "Photo Content Links";
   grid-row-gap: 20px;
   grid-column-gap: 20px;
+  background-color:  #157c56;
 }
 
 .Photo { grid-area: Photo; }
@@ -13,6 +14,8 @@
 .Content { grid-area: Content; }
 
 .Links { grid-area: Links; }
+
+
 }
 @media(max-width: 800px){
   .grid-container {
@@ -29,9 +32,34 @@
   .Photo { grid-area: Photo; }
 
   .Links { grid-area: Links; }
+
 }
 
 img{
   max-height:  100%;
   max-width: 100% ;
+}
+
+div.content{
+  background-color: #8abeab;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.content>p{
+  text-align: justify;
+  font-size: 24px;
+}
+div.links{
+  background-color: #8abeab;
+
+}
+div.photo{
+  background-color: #8abeab;
+  text-align: center;
+}
+
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+
 }
