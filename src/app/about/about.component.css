@@ -39,18 +39,38 @@ img{
   max-height:  100%;
   max-width: 100% ;
 }
+div.photobox{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 div.content{
   background-color: #8abeab;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 div.content>p{
   text-align: justify;
   font-size: 24px;
+
+}
+div.content>h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+div.links>p{
+  text-align: justify;
+  font-size: 24px;
+}
+div.links>h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 div.links{
   background-color: #8abeab;
+  text-align: center;
 
 }
 div.photo{
@@ -61,5 +81,14 @@ div.photo{
 h1{
   font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
+  text-align: center;
 
+}
+#list-item-photos{
+  height:50px;
+  width:50px;
+}
+mat-list{background-color: whitesmoke;}
+mat-list-item{display: block;
+margin: auto;
 }
