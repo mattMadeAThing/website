@@ -1,5 +1,5 @@
-
 <div class="article-header">
+    <br>
     <h1>
       {{(this.post$ | async)?.title}}
     </h1>
@@ -10,16 +10,22 @@
 </div>
 <div class = "background">
   <div class="body-content">
-
+      <!--
+        The below section uses *ngFor to iterate through 3 arrays simultaneously.  Those arrays are within code-posts.json.
+        For each iteration through the div, *ngIf checks whether there is content to display and the location or string of that content.
+      -->
       <div class = "paragraphs" *ngFor="let paragraph of (this.post$ | async).contentParagraph; index as i;">
         <p>
           {{paragraph}}
         </p>
+        <div  *ngIf = "(this.post$ | async).contentHeaders[i] != 'nohdr'">
+          <h2>{{(this.post$ | async)?.contentHeaders[i]}}</h2>
+        </div>
       <div *ngIf = "(this.post$ | async).contentImages[i] != 'noimg'">
         <img [src] = "(this.post$ | async).contentImages[i]">
+        <br>
       </div>
-      <div  *ngIf = "(this.post$ | async).contentHeaders[i] != 'nohdr'">
-        <h2>{{(this.post$ | async)?.contentHeaders[i]}}</h2>
-      </div>
+
+
   </div>
 </div>

@@ -1,20 +1,31 @@
 [
   {
     "id": "0",
-    "title": "Building this website",
-    "header": "A$ync programming and the pursuit of dry code",
+    "title": "Angular 101",
+    "header": "It gets easier, and then it gets awsome",
     "body": "this is the first post",
-    "previewImagePath": "assets/image/focused.jpg",
-    "previewText": "After many iterations and beautiful(and informative) failures, I finally found myself thinking the magic thought\"It's almost done? IT'S ALMOST DONE!!!!\" While making standalone components is certainly gratifying work, the feeling of getting ready to publish my personal site is amazing.  ",
+    "previewImagePath": "https://miro.medium.com/max/961/1*UTz2_Pxgs4VCXAw-r0xbeg.jpeg",
+    "previewText": "Hello.  I'm glad you're here! Here are some quick and dirty tips I would go back in time to tell myself before I first started to learn Angular.",
     "postImage": "assets/image/toomanymonitors.jpg",
     "postImageSubtext":"The minimum number of monitors are needed to produce make a hello world, according to the material design spec",
     "contentParagraph":[
-      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
-      "header",
-      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
-      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
-      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements.",
-      "Like tables, grid layout allows us to align components into columns and rows. However, numerous layouts are either achievable or easier with CSS grid than they were with tables. For example, a grid container’s children could place themselves so they truly overlap and layer, alike CSS positioned elements."
+      "I wanted to share my story of learning angular to provide hope and humble advice for anyone who may be climbing up the learning curve that accompanies Angular.  Here are some things to lookout for and some things to look forward to.",
+      "Angular is awesome.  It can be hard to believe this when you’re one week in staring at a stackblitz screen for the third consecutive hour trying to figure out why HttpClient is not working(check your app.module).  But remember that there is a reason it’s worth all the hurdles that come with learning Angular.  That reason is a framework that is unbelievably powerful and wicked fast.",
+      "The real beauty of the framework takes some hard work and practice to begin to uncover.  But once you start to really get a handle on leveraging template binding together with /”smart/” and /”dumb/” components, you start to see how reusable well made components can be.",
+      "So keep grinding at it.  You’ll get there.  Things that took days when you started will be 15 minute affairs.  Errors that seemed impossibly vague initially will provide you all the information you need to fix it and move on fast.",
+      "One of the best things for a green Angular dev to use is Angular Material.  Out of the box these things look sooo nice.  They allow you to add clean, highly functional parts to your components.  Documentation for these bad boys is on point compared to much of the framework. They are also a great way to get comfortable with the Angular HTML syntax.  And that Angular HTML syntax can be quite daunting at first…",
+      "“Why does this look so weird?”",
+      "-every person who sees Angular HTML for the first time",
+      "It’s a real kicker at first to be sure. The very first thing someone new to Angular needs to get comfortable with is the concept of using typescript to import Modules, Components, and Libraries into your app module.  Once you do that it’s paramount to achieve understanding of data and event binding.",
+      "The HTML template syntax has an odd look and feel starting out.  But getting a handle on that data & event binding is the key to start building reactive and dynamic apps. But before you do any of that, ask yourself; am I proficient with HTML?",
+      "I don’t mean advanced theory or deep DOM understanding-which is important later-I am talking about a solid grasp on the basics.  When I began learning the Angular framework it’d been years since I’d dabbled with HTML. I didn’t take the time to re-learn some common tags and attributes or build a couple basic, static pages.",
+      "This resulted in inefficient learning.  I didn’t always recognize the angular specific elements. And when those elements had attributes that required handling and processing in the typescript, it just got harder to do a root cause analysis when something was not correct.",
+      "Honest confession: I’m still no master of observables. It's easier every day I work professionally, but at first they were a huge conceptual leap. There are a couple things that you can do to make it all better though. ",
+      "They are asynchronous. Although obvious, fundamentally it’s the most important thing to remember when working with them.  If you’re getting ‘undefined’ when you’re not expecting it, you’re probably thinking about it like a regular variable. It's not.",
+      "You need to remember, observables A. Are lazy and won't execute until something explicitly calls them and B. You have to subscribe to them to get values C. If you don't ubsubscribe your subscriptions properly you will cause memory leaks. Yikes!",
+      "I know that the “gotchas” I've provided are explained far too breifly to be considered a guide. Check medium, stackexchange and google. I know that the “Angular is sweet!” sections may be hard to connect with if you're just starting out. But it's worth it, I promise.  This framework has been an excercise in perserverence and dedication to success. ",
+      "From where I stand, It's all been worth it. I still have so much to learn, but I'm getting better every single day. Angular has given me my first paid work out of college, and I now see how powerful it is. I've come to love a framework that was exceptionally tricky to learn.",
+      ""
     ],
     "contentImages":[
       "noimg",
@@ -27,38 +38,39 @@
       "noimg",
       "noimg",
       "noimg",
+      "https://media.boingboing.net/wp-content/uploads/2016/11/bcf.png",
+      "noimg",
+      "noimg",
+      "noimg",
       "noimg",
       "noimg",
       "noimg"
     ],
     "contentHeaders":[
+      "Angular can daunting at first",
+      "The good",
       "nohdr",
-      "nohdr",
-      "nohdr",
-      "The struggle of asynchronous code",
-      "nohdr",
-      "nohdr",
-      "nohdr",
-      "nohdr",
+      "Material is marvelous",
+      "Tips for those starting out",
       "nohdr",
       "nohdr",
       "nohdr",
       "nohdr",
+      "nohdr",
+      "Ob$ervable$",
+      "nohdr",
+      "nohdr",
+      "nohdr",
+      "Keep going",
       "nohdr"
     ]
   },
   {
     "id": "1",
-    "title": "Angular as a first framework",
-    "header": "Overcoming the learning cliff",
+    "title": "More content coming soon",
+    "header": "I will make more time for writing when I finish some more advanced Angular projects.",
     "body": "this is the second post",
-    "previewText": "this is a preview"
-  },
-  {
-    "id": "2",
-    "title": "codePostThree",
-    "header": "codePostTwo Header",
-    "body": "this is the second post",
-    "previewText": "this is a preview"
+    "previewText": "This site is nice(in my unbiased opinion) but I need more evidence on my github that I can make dynamic apps."
   }
+
 ]

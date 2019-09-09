@@ -1,19 +1,21 @@
+<div id="post-card">
 <div *ngFor="let post of postList$ | async">
 
-  <div class="background-postlist">
-    <mat-list>
-      <mat-card class="grid-container">
-        <div class="post-title">
-          <h1 class = h1sz>{{post.title}}</h1>
-          <em >{{post.header}}</em>
-        </div>
-        <div class="post-preview">
-          <mat-card-header>{{post.previewText}}
-        </mat-card-header>
-      </div>
-        <a [routerLink]="['/', this.category, post.id]" routerLinkActive="router-link-active">go</a><img
-          *ngIf="post.previewImagePath != undefined" class="post-photo" [src]="post.previewImagePath">
-      </mat-card>
-    </mat-list>
+
+      <mat-card>
+          <mat-card-header>
+        <mat-card-title>
+          <h1>{{post.title}}</h1>
+        </mat-card-title>
+        <mat-card-subtitle><em>{{post.header}}</em></mat-card-subtitle>
+      </mat-card-header>
+            <img mat-card-image *ngIf="post.previewImagePath != undefined" class="post-photo" [src]="post.previewImagePath">
+            <mat-card-content><p>{{post.previewText}}</p></mat-card-content>
+            <mat-card-actions>
+              <a mat-raised-button [routerLink]="['/', this.category, post.id]" routerLinkActive="router-link-active">
+                Read this post</a>
+            </mat-card-actions>
+        </mat-card>
+
   </div>
 </div>
